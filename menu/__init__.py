@@ -184,6 +184,16 @@ class MenuItem(object):
 
         if curitem is not None:
             curitem.selected = True
+            #if select an item, I assign its usl to its parent
+            self.url = curitem.url
+        #if a list of children has no selected item, I select the first
+        else:
+            try:
+                first = self.children
+                first.selected = True
+                self.url = first.url
+            except:
+                pass
 
     def match_url(self, request):
         """

@@ -9,7 +9,12 @@
 
     <body>
         <h1>User Menu</h1>
-        {% with menu=menus.user %}{% include "menu.html" %}{% endwith %}
+{#        {% with menu=menus.user %}{% include "menu.html" %}{% endwith %}#}
+        {% with menu=menus.user %}{% include "menu_deep_selected.html" %}{% endwith %}
+
+        <h1>User Sub Menu</h1>
+{#        {% with menu=menus.submenu %}{% include "menu.html" %}{% endwith %}#}
+        {% with menu=menus.user %}{% include "menu_deep_selected_child.html" %}{% endwith %}
 
         <h1>Main Menu</h1>
         {% with menu=menus.main %}{% include "menu.html" %}{% endwith %}

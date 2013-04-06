@@ -1,0 +1,10 @@
+<ul>
+    {% for menu_item in menu %}
+       {% if menu_item.selected %}
+        {% for item in menu_item.children %}
+        {% if item.separator %}<li>------------</li>{% endif %}
+        <li><a {%  if item.selected %} style="text-decoration: overline " {% endif %} href="{{ item.url }}">{{ item.title }}</a></li>
+        {% endfor %}
+       {% endif %}
+    {% endfor %}
+</ul>
