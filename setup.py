@@ -12,7 +12,7 @@ setup(name='django-simple-menu',
       long_description=open('README.rst').read(),
       author='Evan Borgstrom',
       author_email='evan@fatbox.ca',
-      url='https://github.com/fatbox/django-simple-menu',
+      url='https://github.com/matteofattore-nextage/django-simple-menu',
       classifiers=[
           'Development Status :: 5 - Production/Stable',
           'Framework :: Django',
